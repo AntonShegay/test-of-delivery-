@@ -1,0 +1,24 @@
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+
+# Кнопка для отправки номера:
+def phone_number_kb():
+    kb = ReplyKeyboardMarkup(resize_keyboard=True)
+
+    button = KeyButton ('Share contact", request_contact=True)
+
+    return kb
+
+# Кнопка для отправки локации
+def location_kb():
+    kb = ReplyKeyboardMarkup(resize_keyboard=True)
+
+    button = KeyButton ('Share location", request_location=True)
+
+    return kb
+# Кнопка для выбора пола
+def gender_kb():
+    kb = ReplyKeyboardMarkup(resize_keyboard=True)
+
+    button = KeyButton ('Share gender", request_gender=True)
+
+    return kb
